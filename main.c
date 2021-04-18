@@ -45,6 +45,20 @@ void inserir(MYSQL *conexao, char *nome, float saldo)
 int main()
 {
     MYSQL *conexao = obterConexao();
+    char nome[100];
+    float saldo;
+    int i;
+
+    printf("\n*** CADASTRO DE CLIENTES ***\n");
+    for (i = 0; i < 3; i++)
+    {
+        printf("\n%d - Nome: ", i);
+        fflush(stdin);
+        gets(nome);
+        printf("%d - Saldo: ", i);
+        scanf("%f", &saldo);
+        inserir(conexao, nome, saldo);
+    }
 
     mysql_close(conexao);
     return 0;
