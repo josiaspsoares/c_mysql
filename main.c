@@ -26,8 +26,26 @@ MYSQL *__stdcall obterConexao()
     }
 }
 
+void inserir(MYSQL *conexao, char *nome, float saldo)
+{
+    char query[100];
+    sprintf(query, "INSERT INTO CLIENTES(nome, saldo) VALUES('%s', '%f');", nome, saldo);
+
+    if (mysql_query(conexao, query))
+    {
+        fprintf(stderr, "\n%s\n", mysql_error(conexao));
+        exit(1);
+    }
+    else
+    {
+        printf("\nDados inseridos com sucesso!\n");
+    }
+}
+
 int main()
 {
     MYSQL *conexao = obterConexao();
+
+    mysql_close(conexao);
     return 0;
 }
