@@ -109,26 +109,26 @@ int main()
     float saldo;
     int i;
 
-    // printf("\n*** CADASTRO DE CLIENTES ***\n");
-    // for (i = 0; i < 2; i++)
-    // {
-    //     printf("\n%d - Nome: ", i);
-    //     fflush(stdin);
-    //     gets(nome);
-    //     printf("%d - Saldo: ", i);
-    //     scanf("%f", &saldo);
-    //     inserir(conexao, nome, saldo);
-    // }
+    printf("\n*** CADASTRO DE CLIENTES ***\n");
+    for (i = 0; i < 3; i++)
+    {
+        printf("\n%d - Nome: ", i);
+        fflush(stdin);
+        gets(nome);
+        printf("%d - Saldo: ", i);
+        scanf("%f", &saldo);
+        inserir(conexao, nome, saldo);
+    }
+
+    printf("\n*** CLIENTES CADASTRADOS ***\n");
+    ler(conexao);
+
+    // // atualizar(conexao, 9, 300.49);
 
     // printf("\n*** CLIENTES CADASTRADOS ***\n");
     // ler(conexao);
 
-    // atualizar(conexao, 1, 300);
-
-    // printf("\n*** CLIENTES CADASTRADOS ***\n");
-    // ler(conexao);
-
-    //apagar(conexao, 3);
+    // apagar(conexao, 11);
 
     // printf("\n*** CLIENTES CADASTRADOS ***\n");
     // ler(conexao);
