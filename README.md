@@ -20,13 +20,13 @@ Se você ainda não tem o XAMPP instalado, deixarei o link do site oficial para 
 <h2>#04 Realizando Conexão com o MySQL e Compilando Código pelo VS Code</h2>
 <b>Vídeo:</b> https://youtu.be/eLYZzIV-C64</br></br> 
 Nesta aula, abordarei o código-fonte em C para realizar a conexão com o banco de dados MySQL. Além disso, ensinarei como compilar o programa no Visual Studio Code.</br> 
-Código-fonte: https://github.com/josiassoares/c_mysql/tree/aula04
+Código-fonte: https://github.com/josiaspsoares/c_mysql/tree/aula04
 
 <h2>#05 Explorando inserção, leitura, atualização e exclusão (CRUD)</h2>
 <b>Vídeo:</b> https://youtu.be/G25pnuzJGSw</br></br> 
 Nesta aula, abordarei o código-fonte em C para realizar inserção, leitura, atualização e exclusão no banco de dados MySQL. Estas operações também são conhecidas com CRUD (create, read, update, delete).
 </br> 
-Código-fonte: https://github.com/josiassoares/c_mysql/tree/aula05
+Código-fonte: https://github.com/josiaspsoares/c_mysql/tree/aula05
 
 <h2>Comando para compilação no VS Code</h2>
 gcc main.c libmysql.lib -o main
